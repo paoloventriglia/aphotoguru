@@ -144,8 +144,9 @@ echo "<META http-equiv='Content-Type' content='text/html; charset=UTF-8'>";
 echo "<title>A PHOTO GURU</title>";
 echo "<script src='demo.js'></script>";
 echo "<style>";
-echo "body {background:'uploads/bg.jpeg';color:white; font-family:'Courier-New';font-size:'20px'}";
-echo "h1 {color:'white'; font-family:'Courier-New';font-size:'40px'}";
+echo "body {font-family: 'Roboto', sans-serif; font-size:20px}";
+echo "h1 {font-family: 'Roboto', sans-serif; font-size:60px}";
+echo "</style>";
 echo "</head>";
 echo "<body>";
 
@@ -155,7 +156,7 @@ if (isset($_SESSION['username']))
 	// This section is shown when user is login
 	echo "<table width=100% border=0>";
 	echo "<tr>";
-		echo "<td><H1>A PHOTO GURU</H1></td>";
+		echo "<td align='center'><H1>A PHOTO GURU</H1></td>";
 		echo "<td align='right'>";
 			echo "$username<br>";
 			echo "<a href='index.php?logout=yes'>Logout</a>";
@@ -176,7 +177,7 @@ else
 	// This section is shown when user is not login
 	echo "<table width=100% border=0>";
 	echo "<tr>";
-		echo "<td><H1>A PHOTO GURU</H1></td>";
+		echo "<td align='center'><H1>A PHOTO GURU</H1></td>";
 		echo "<td align='right'>";
 			echo "<form action='index.php' method='post'>";
 			echo "Enter Your Name: <br>";
@@ -186,7 +187,6 @@ else
 		echo "</td>";
 	echo "</tr>";
 	echo "</table>";
-	echo "<HR>";
 }
 
 // Get the most recent N images
@@ -218,7 +218,7 @@ if ($storage_option == "hd")
 	{
 		$filename = $image["filename"];
 		$url = "uploads/".$filename;
-		echo "<img src='$url' width=200px height=150px>&nbsp;&nbsp;";
+		echo "<img src='$url' width=400px height=300px>&nbsp;&nbsp;";
 	}
 }
 else if ($storage_option == "s3")
