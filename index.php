@@ -144,9 +144,9 @@ echo "<META http-equiv='Content-Type' content='text/html; charset=UTF-8'>";
 echo "<title>A PHOTO GURU</title>";
 echo "<script src='demo.js'></script>";
 echo "<style>";
-echo "body {font-family: Roboto ;font-size:20px}";
-echo "h1 {font-family: Roboto;font-size:60px}";
-echo "</style>"
+echo "body {font-family: 'Roboto', sans-serif; font-size:20px}";
+echo "h1 {font-family: 'Roboto', sans-serif; font-size:60px}";
+echo "</style>";
 echo "</head>";
 echo "<body>";
 
@@ -187,7 +187,6 @@ else
 		echo "</td>";
 	echo "</tr>";
 	echo "</table>";
-	echo "<HR>";
 }
 
 // Get the most recent N images
