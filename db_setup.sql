@@ -37,7 +37,7 @@ CREATE TABLE `upload_images` (
 
 LOCK TABLES `upload_images` WRITE;
 /*!40000 ALTER TABLE `upload_images` DISABLE KEYS */;
-INSERT INTO `upload_images` VALUES (1,'Qingye Jiang','clouds1.jpg','2015-01-31 04:21:11'),(2,'Qingye Jiang','clouds2.jpg','2015-01-31 04:21:15'),(3,'Qingye Jiang','clouds3.jpg','2015-01-31 04:21:20'),(4,'Qingye Jiang','clouds4.jpg','2015-01-31 04:21:25'),(5,'Qingye Jiang','clouds5.jpg','2015-01-31 04:24:26'),(6,'Qingye Jiang','clouds6.jpg','2015-01-31 04:24:30'),(7,'Qingye Jiang','clouds7.jpg','2015-01-31 04:24:34'),(8,'Qingye Jiang','clouds8.jpg','2015-01-31 04:24:38'),(9,'Qingye Jiang','clouds9.jpg','2015-01-31 04:25:49'),(10,'Qingye Jiang','clouds10.jpg','2015-01-31 04:25:53');
+INSERT INTO `upload_images` VALUES (1,'photo','clouds1.jpg','2015-01-31 04:21:11'),(2,'photo','clouds2.jpg','2015-01-31 04:21:15'),(3,'photo','clouds3.jpg','2015-01-31 04:21:20'),(4,'photo','clouds4.jpg','2015-01-31 04:21:25'),(5,'photo','clouds5.jpg','2015-01-31 04:24:26'),(6,'photo','clouds6.jpg','2015-01-31 04:24:30'),(7,'photo','clouds7.jpg','2015-01-31 04:24:34'),(8,'photo','clouds8.jpg','2015-01-31 04:24:38'),(9,'photo','clouds9.jpg','2015-01-31 04:25:49'),(10,'photo','clouds10.jpg','2015-01-31 04:25:53');
 /*!40000 ALTER TABLE `upload_images` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
