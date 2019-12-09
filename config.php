@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$db_hostname = "35.246.0.145";
+$db_hostname = "localhost";
 $db_port     = 3306;
 $db_database = "aphotoguru";
 $db_username = "guru";
