@@ -1,8 +1,3 @@
--- MySQL dump 10.13  Distrib 5.5.41, for debian-linux-gnu (x86_64)
---
--- Host: localhost    Database: web_demo
--- ------------------------------------------------------
--- Server version	5.5.41-0ubuntu0.12.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,18 +13,14 @@
 --
 -- Table structure for table `upload_images`
 --
-
-DROP TABLE IF EXISTS `upload_images`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `upload_images` (
+CREATE TABLE IF NOT EXISTS `upload_images` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) DEFAULT '',
   `filename` varchar(255) DEFAULT '',
   `timeline` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40101 SET character_set_client = utf8 */;
 
 --
 -- Dumping data for table `upload_images`
